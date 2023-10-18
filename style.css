@@ -1,8 +1,33 @@
-nav {
-  display: flex;
+html, body {
+  font-size: 32px;
 }
 
 nav ul {
   padding-left: 0;
   list-style: none;
+}
+
+nav a {
+  display: block;
+  padding: .5rem 1rem;
+  border: 2px #495194 solid;
+  background-color: #F2A09F;
+  color:#3f3d53;
+  text-decoration: none;
+}
+
+/* never apply padding to the "lists" items, apply padding to "a" links - gives other more surface area to click */
+
+nav a:hover {
+  background-color: #733B3D;
+  color:rgb(231, 239, 239);
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  transition: .250s;
+}
+/* when you click on a link and it changes color */
+nav a:active {
+  background-color: #BE8FB8;
+  color:aliceblue;
+
 }
